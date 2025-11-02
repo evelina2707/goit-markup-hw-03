@@ -22,7 +22,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.img {  
+img {  
   display: block;
 }
 
@@ -55,25 +55,28 @@ display: flex;
 justify-content: space-between;
 height: 72px;
 align-items: center;
+border-bottom: 1px solid #e7e9fc
 }
 
-.logo-main {
+.main-logo {
 font-weight: 700;
 font-size: 18px;
 line-height: 1.16667;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4d5ae5;
+margin-right: 76px;
 }
 
-.nav-main {
+.page-nav {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  /* display: flex;
-  justify-content: space-between; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-left: 76px;
 }
 
@@ -84,16 +87,14 @@ color: #4d5ae5;
   padding: 0;
 }
 
-.nav-list-link {
+.nav-list-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
   display: flex;
-    gap: 40px;
-    margin: 0;
-    padding: 0;
+  padding: 24px 0;
 
 }
 
@@ -109,11 +110,14 @@ color: #4d5ae5;
   justify-content: space-between;
 }
 
-.text-black {
-  color: #2e2f42;
+.nav-link {
+
 }
 
 
+.accent-black {
+  color: #2e2f42;
+}
 
 .nav-link:hover,
 .nav-link:focus {
@@ -125,15 +129,18 @@ color: #4d5ae5;
   text-decoration: underline;
 }
 
-.contacts {
+.main-contacts {
   font-style: normal;
 }
 
-.contacts-link {
+.contacts-list {
   display: flex;
   gap: 40px;
 }
 
+.contacts-link {
+display: flex;
+}
 
 .adress {
   font-weight: 400;
@@ -153,9 +160,9 @@ color: #4d5ae5;
 
 /* #region solutions */
 
-.main-section {
+.main-section .container {
   background-color: #2e2f42;
-  padding-bottom: 60px;
+  padding: 188px 0;
 }
 
 .main-title {
@@ -165,6 +172,9 @@ color: #4d5ae5;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  max-width: 496px;
+  display: flex;
+  margin-bottom: 48px;
 }
 
 .main-button {
@@ -175,6 +185,11 @@ color: #4d5ae5;
   color: #fff;
   background: #4d5ae5;
   cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
 
 .main-button:hover,
@@ -182,32 +197,72 @@ color: #4d5ae5;
   background-color: #404bbf;
 }
 
-.main-text {
-
+.feature {
+padding: 120px 0;
 }
 
-.menu-item  {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+.subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
   letter-spacing: 0.02em;
+  text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
+
 }
 
-.menu-item-list {
+.feature-list {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  display: flex;
+  gap: 24px;
+
+}
+
+.feature-item {
+width: calc((100% - 72px) / 4);
+}
+
+
+.subsubtitle {
+text-align: center;
+
+}
+
+.feature-text {
+margin-bottom: 8px;
 }
 
 /* #endregion solution */
 
 /* #region team */
 
-.section-team {
+.team {
   background: #f4f4fd;
+  display: flex;
+  padding: 120px 0;
+
+}
+
+.team-card {
+display: flex;
+gap: 24px;
+
+}
+
+.team-card-list {
+width: calc((100% - 72px) / 4);
+border-radius: 0px 0px 4px 4px;
+padding: 32px 0;
+margin-bottom: 8px;
+}
+
+.team-text {
+
 }
 
 .section-title {
@@ -247,21 +302,44 @@ color: #4d5ae5;
 
 /* #region portfolio */
 
+.portfolio .container {
+padding: 120px 0 120px 0;
+
+}
+
+.project-card {
+display: flex;
+flex-wrap: wrap;
+column-gap: 24px;
+row-gap: 48px;
+}
+
 .section-title {
   line-height: 1.11;
   text-transform: capitalize;
 }
 
-.card-portfolio {
+.project-card-list {
   background: #fff;
+  width: calc((100% - 48px) / 3);
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
+}
+
+.portfolio-text {
+
 }
 
 /* #endregion portfolio */
 
 /* #region footer */
 
-.footer {
+.footer .container {
   background: #2e2f42;
+  padding: 100px 0;
+  height: 312px;
 }
 
 .logo-footer {
@@ -272,13 +350,15 @@ color: #4d5ae5;
   letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
-.color-logo {
+.accent-white {
   color: #f4f4fd;
 }
 
-.text-footer {
+.footer-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
