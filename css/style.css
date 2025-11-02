@@ -55,7 +55,7 @@ display: flex;
 justify-content: space-between;
 height: 72px;
 align-items: center;
-border-bottom: 1px solid #e7e9fc
+border-bottom: 1px solid #e7e9fc;
 }
 
 .main-logo {
@@ -160,7 +160,7 @@ display: flex;
 
 /* #region solutions */
 
-.main-section .container {
+.main-section {
   background-color: #2e2f42;
   padding: 188px 0;
 }
@@ -230,7 +230,7 @@ width: calc((100% - 72px) / 4);
 
 .subsubtitle {
 text-align: center;
-
+margin-bottom: 8px;
 }
 
 .feature-text {
@@ -302,7 +302,7 @@ margin-bottom: 8px;
 
 /* #region portfolio */
 
-.portfolio .container {
+.portfolio {
 padding: 120px 0 120px 0;
 
 }
@@ -336,7 +336,7 @@ row-gap: 48px;
 
 /* #region footer */
 
-.footer .container {
+.footer {
   background: #2e2f42;
   padding: 100px 0;
   height: 312px;
