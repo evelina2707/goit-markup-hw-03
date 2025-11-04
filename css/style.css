@@ -27,12 +27,11 @@ img {
 }
 
 .container {
-  display: flex;
-  width: 1158px;
   padding-left: 15px;
   padding-right:  15px;
   margin: 0 auto;
   width: calc((100% - 72px) / 4);
+  width: 1158px;
 }
 
 
@@ -86,7 +85,6 @@ margin-right: 76px;
   gap: 40px;
   margin: 0;
   padding: 0;
-  padding: 24px 0;
 }
 
 .nav-list-item {
@@ -96,6 +94,7 @@ margin-right: 76px;
   letter-spacing: 0.02em;
   color: #2e2f42;
   display: flex;
+  padding: 24px 0;
 }
 
 .nav-list-link:active {
@@ -308,7 +307,6 @@ display: flex;
 flex-wrap: wrap;
 column-gap: 24px;
 row-gap: 48px;
-justify-content: space-between;
 }
 
 .section-title {
@@ -318,18 +316,22 @@ justify-content: space-between;
 
 .project-card-list {
   display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   background: #fff;
   width: calc((100% - 48px) / 3);
   padding: 48px 0;
-  border: 1px solid #e7e9fc;
-  border-top: none;
-  margin-bottom: 8px;
 }
 
 .portfolio-text {
 
+}
+
+.app {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 
 /* #endregion portfolio */
@@ -350,8 +352,8 @@ justify-content: space-between;
   letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase;
-  display: inline-block;
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .accent-white {
