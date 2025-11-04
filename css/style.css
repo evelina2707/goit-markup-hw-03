@@ -27,14 +27,14 @@ img {
 }
 
 .container {
-  max-width: 1158px;
-  width: 100%;
+  display: flex;
+  width: 1158px;
   padding-left: 15px;
   padding-right:  15px;
-  margin-left: auto;  
-  margin-right: auto;
   margin: 0 auto;
+  width: calc((100% - 72px) / 4);
 }
+
 
 .visually-hidden {
   position: absolute;
@@ -62,7 +62,7 @@ border-bottom: 1px solid #e7e9fc;
 .main-logo {
 font-weight: 700;
 font-size: 18px;
-line-height: 1.16667;
+line-height: 1.16;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4d5ae5;
@@ -78,7 +78,7 @@ margin-right: 76px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 76px;
+  margin-right: 76px;
 }
 
 .nav-list {
@@ -86,6 +86,7 @@ margin-right: 76px;
   gap: 40px;
   margin: 0;
   padding: 0;
+  padding: 24px 0;
 }
 
 .nav-list-item {
@@ -95,7 +96,6 @@ margin-right: 76px;
   letter-spacing: 0.02em;
   color: #2e2f42;
   display: flex;
-  padding: 24px 0;
 }
 
 .nav-list-link:active {
@@ -106,8 +106,6 @@ margin-right: 76px;
   letter-spacing: 0.03em;
   color: #4d5ae5;
   text-transform: uppercase;
-  /* display: flex;
-  justify-content: space-between; */
 }
 
 .nav-link {
@@ -183,15 +181,13 @@ display: flex;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
-  background: #4d5ae5;
+  background-color: #4d5ae5;
   cursor: pointer;
   display: block;
-  align-items: center;
   min-width: 169px;
   height: 56px;
   border: none;
   border-radius: 4px;
-  margin: 0 auto;
 }
 
 .main-button:hover,
@@ -254,7 +250,6 @@ margin-bottom: 8px;
 .team-card {
 display: flex;
 gap: 24px;
-
 }
 
 .team-card-list {
@@ -267,8 +262,12 @@ padding: 32px 0;
 margin-bottom: 8px;
 }
 
-.team-text {
+.card {
+  padding: 32px 0;
+}
 
+.team-text {
+text-align: center;
 }
 
 
@@ -365,6 +364,7 @@ justify-content: space-between;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  max-width: 264px;
 }
 
 /* #endregion footer */
