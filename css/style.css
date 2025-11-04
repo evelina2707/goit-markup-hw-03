@@ -27,11 +27,9 @@ img {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right:  15px;
-  margin: 0 auto;
-  width: calc((100% - 72px) / 4);
   width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 
@@ -94,7 +92,6 @@ margin-right: 76px;
   letter-spacing: 0.02em;
   color: #2e2f42;
   display: flex;
-  padding: 24px 0;
 }
 
 .nav-list-link:active {
@@ -108,7 +105,7 @@ margin-right: 76px;
 }
 
 .nav-link {
-
+  padding: 24px 0;
 }
 
 
