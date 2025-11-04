@@ -49,11 +49,15 @@ img {
 /* #region header */
 
 .page-header {
-display: flex;
-justify-content: space-between;
-align-items: center;
 border-bottom: 1px solid #e7e9fc;
 }
+
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+
+
 
 .main-logo {
 font-weight: 700;
