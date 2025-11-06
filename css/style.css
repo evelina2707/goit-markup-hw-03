@@ -231,7 +231,7 @@ width: calc((100% - 72px) / 4);
 }
 
 
-.subsubtitle {
+.subsubtitle-portfolio {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -239,6 +239,7 @@ width: calc((100% - 72px) / 4);
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: left;
 }
 
 .feature-text {
@@ -248,6 +249,17 @@ width: calc((100% - 72px) / 4);
 /* #endregion solution */
 
 /* #region team */
+
+.subsubtitle-team {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+  text-align: center;
+}
 
 .team {
   background: #f4f4fd;
